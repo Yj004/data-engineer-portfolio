@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Profile Image</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            color: #64ffda;
+            margin-bottom: 2rem;
+        }
+        .instructions {
+            background-color: #172a45;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .image-container {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        .profile-image {
+            max-width: 100%;
+            border: 2px solid #64ffda;
+            border-radius: 0.5rem;
+        }
+        .button {
+            background-color: #64ffda;
+            color: #0a192f;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.25rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #4cd3bd;
+            transform: translateY(-2px);
+        }
+        code {
+            background-color: #0a192f;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-family: 'Fira Code', monospace;
+        }
+        .highlight {
+            color: #64ffda;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Save Your Profile Image</h1>
+        
+        <div class="instructions">
+            <p>Follow these steps to add your profile image to the portfolio:</p>
+            <ol>
+                <li>Right-click on your image below and select <span class="highlight">"Save Image As..."</span></li>
+                <li>Navigate to the <span class="highlight">data-engineer-portfolio/public/images/</span> directory</li>
+                <li>Save the file as <span class="highlight">profile-image.jpg</span></li>
+                <li>The image will automatically appear in your portfolio with the themed styling</li>
+            </ol>
+        </div>
+        
+        <div class="image-container">
+            <!-- The image you shared will be displayed here when viewed in a browser -->
+            <img id="profileImage" class="profile-image" src="" alt="Yashjeet Profile Image">
+        </div>
+        
+        <p>After saving the image, you can start the development server to see your portfolio with the image:</p>
+        <code>cd data-engineer-portfolio && npm start</code>
+    </div>
+
+    <script>
+        // This script would normally load your image, but since we can't directly embed it here,
+        // you'll need to open this file in a browser and then right-click on your image to save it
+        document.addEventListener('DOMContentLoaded', function() {
+            // You would replace this with the actual image data or URL
+            const imageElement = document.getElementById('profileImage');
+            imageElement.src = 'YOUR_IMAGE_URL_OR_DATA_HERE';
+            
+            // Fallback if image doesn't load
+            imageElement.onerror = function() {
+                this.src = 'https://via.placeholder.com/400x500?text=Yashjeet+Profile';
+                alert('Please replace this placeholder with your actual profile image.');
+            };
+        });
+    </script>
+</body>
+</html> 
