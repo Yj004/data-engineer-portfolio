@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           
           <div className="flex space-x-6">
             <a 
-              href="https://github.com/yashjeet" 
+              href="https://github.com/yj004" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-tertiary hover:text-secondary transition-colors duration-300"
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
               <FaGithub size={24} />
             </a>
             <a 
-              href="https://linkedin.com/in/yashjeet" 
+              href="https://linkedin.com/in/yashjeet-singh" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-tertiary hover:text-secondary transition-colors duration-300"
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
               <FaTwitter size={24} />
             </a>
             <a 
-              href="mailto:contact@yashjeet.com" 
+              href="mailto:work.yashjeet@gmail.com" 
               className="text-tertiary hover:text-secondary transition-colors duration-300"
               aria-label="Email"
             >

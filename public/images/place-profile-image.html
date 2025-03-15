@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Profile Image</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            color: #64ffda;
+            margin-bottom: 2rem;
+        }
+        .instructions {
+            background-color: #172a45;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #64ffda;
+            font-weight: bold;
+        }
+        .image-preview {
+            margin: 2rem 0;
+            border: 2px solid #64ffda;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            max-width: 400px;
+        }
+        .image-preview img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        code {
+            background-color: #0a192f;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Place Your Profile Image</h1>
+        
+        <div class="instructions">
+            <p>Follow these steps to add your profile image to the portfolio:</p>
+            <ol>
+                <li>Save the image you shared as <span class="highlight">profile-image.jpg</span> in the <span class="highlight">public/images/</span> directory</li>
+                <li>Make sure the file is not empty (currently it's 0 bytes)</li>
+                <li>After saving the image, run <code>npm run deploy</code> to update your portfolio</li>
+            </ol>
+        </div>
+        
+        <div class="image-preview">
+            <h3>Current Profile Image Preview:</h3>
+            <img src="profile-image.jpg" alt="Profile Image" onerror="this.src='https://via.placeholder.com/400x400?text=No+Image+Found'; this.onerror=null;">
+        </div>
+        
+        <p>Your profile image will appear in both the Home and About sections of your portfolio.</p>
+    </div>
+</body>
+</html> 

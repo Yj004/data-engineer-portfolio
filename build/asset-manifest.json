@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/data-engineer-portfolio/static/css/main.8859235c.css",
+    "main.js": "/data-engineer-portfolio/static/js/main.b6d612bd.js",
+    "index.html": "/data-engineer-portfolio/index.html",
+    "main.8859235c.css.map": "/data-engineer-portfolio/static/css/main.8859235c.css.map",
+    "main.b6d612bd.js.map": "/data-engineer-portfolio/static/js/main.b6d612bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8859235c.css",
+    "static/js/main.b6d612bd.js"
+  ]
+}

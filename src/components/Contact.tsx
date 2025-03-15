@@ -68,10 +68,10 @@ const Contact: React.FC = () => {
                     <FaEnvelope size={20} />
                   </div>
                   <a 
-                    href="mailto:contact@yashjeet.com" 
+                    href="mailto:work.yashjeet@gmail.com" 
                     className="text-tertiary hover:text-secondary transition-colors duration-300"
                   >
-                    contact@yashjeet.com
+                    work.yashjeet@gmail.com
                   </a>
                 </div>
                 
@@ -80,12 +80,12 @@ const Contact: React.FC = () => {
                     <FaLinkedin size={20} />
                   </div>
                   <a 
-                    href="https://linkedin.com/in/yashjeet" 
+                    href="https://linkedin.com/in/yashjeet-singh" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-tertiary hover:text-secondary transition-colors duration-300"
                   >
-                    linkedin.com/in/yashjeet
+                    linkedin.com/in/yashjeet-singh
                   </a>
                 </div>
                 
@@ -94,12 +94,12 @@ const Contact: React.FC = () => {
                     <FaGithub size={20} />
                   </div>
                   <a 
-                    href="https://github.com/yashjeet" 
+                    href="https://github.com/yj004" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-tertiary hover:text-secondary transition-colors duration-300"
                   >
-                    github.com/yashjeet
+                    github.com/yj004
                   </a>
                 </div>
                 
